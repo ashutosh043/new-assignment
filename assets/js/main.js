@@ -59,12 +59,9 @@ $(document).ready(function(){
     });
     
     $(".hemburger-menu-icon").click(function(){
-       $(".custom-nav-wrapper").toggleClass("open");
+        $(".navigation-menu").toggleClass("open");
     });
     
-    $(".hemburger-menu-icon").click(function(){
-        $(".background").toggleClass("back");
-    });
 });
 
 
