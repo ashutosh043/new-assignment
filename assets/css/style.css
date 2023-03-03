@@ -42,6 +42,20 @@ a{
     cursor: pointer;
 }
 
+    .navigation-menu {
+    position: fixed;
+    background: #000;
+    width: 210px;
+    top: 0;
+    bottom: 0;
+    z-index: 99;
+    right: -210px;
+    transition: 0.3s all linear;
+}
+
+.navigation-menu.open{
+right: 0;
+}
 /* header */
 
 /* section1 */
