@@ -1,0 +1,228 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --black-color: #000;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+a{
+    color: #000;
+}
+
+
+
+
+
+
+
+@media(max-width: 767px) {
+/* header */
+
+
+.other-items >.other-list {
+    margin-right: 12px;
+}
+.other-items >.other-list>i{
+    cursor: pointer;
+}
+
+/* header */
+
+/* section1 */
+
+.products .owl-carousel .item> img {
+    width: 100%;
+    height: 76px;
+}
+.products .owl-carousel .item> h6{
+   font-size: 14px;
+}
+
+.best-seller   .owl-carousel .item> img{
+    height: 130px;
+}
+
+.product-content >span {
+    font-size: 14px;
+}
+
+.mobile-mount .owl-carousel .item> img ,
+.power .owl-carousel .item> img , .customer .owl-carousel .item> img{
+    height: 139px;
+}
+
+.best-seller-heading>h4 ,
+.mobile-mount-heading>h4 , 
+.lifestyle-heading>h4 ,
+.power-heading>h4{
+    font-weight: 800;
+}
+
+.mobile-mount .owl-dots>button>span ,.lifestyle .owl-dots>button>span ,
+
+.power .owl-dots>button>span{
+    width: 50px !important;
+    border-radius: 2px !important;
+    height: 6px !important;
+}
+
+
+.mobile-mount .owl-dot.active span , .lifestyle .owl-dot.active span,
+.power .owl-dot.active span{
+    background-color: #000 !important;
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 30px;
+}
+
+/* section1 */
+
+
+.accessories-content>span {
+    display: block;
+    font-size: 28px !important;
+    font-weight: 800;
+}
+.accessories-content {
+    position: absolute;
+    top: 0;
+    right: 28px;
+    bottom: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.accessories-content>a {
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 15px;
+    display: block;
+    font-size: 14px;
+
+}
+
+.customer {
+    background: #f7f7f7;
+    padding: 24px 10px;
+}
+
+
+.support-ot-content>i {
+    font-size: 50px;
+    text-align: center;
+}
+.lifestyle-heading>h4>i{
+ color: red;
+}
+
+.support-ot-content>span{
+    font-size:12px ;
+    font-weight: 600;
+}
+
+.filter{
+    background-color: #14d78f;
+}
+
+
+.filter-col>span {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+}
+
+.filter-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.customer .product-content >span, .customer .product-content  i{
+    font-weight: 600;
+}
+
+
+    /* hemburger menu */
+
+
+    .hembuger-menu {
+        position: relative;
+        width: 50px;
+    height: 40px;
+    }
+
+    .hemburger-menu-icon {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        cursor: pointer;
+        z-index: 9;
+        width: 28px;
+        height:100%;
+    }
+
+    .line {
+        width: 27px;
+        height: 3px;
+        background-color: #323232;
+        right: 0;
+        top: 0;
+        margin: 8px 0;
+        border-radius: 5px;
+        position: absolute;
+        transition: 0.5s all ease;
+    }
+
+    .line.line1 {
+        top: 3px;
+        transform-origin: left;
+    }
+
+    .line.line2 {
+        top: 11px;
+    }
+
+    .line.line3 {
+        top: 19px;
+        transform-origin: left;
+    }
+
+
+    .hemburger-menu-icon.active .line.line1 {
+        transform: rotate(46deg);
+        top: 0px;
+    }
+
+    .hemburger-menu-icon.active .line.line2 {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    .hemburger-menu-icon.active .line.line3 {
+        transform: rotate(-46deg);
+    }
+    
+    /* hemburger menu */
+}
